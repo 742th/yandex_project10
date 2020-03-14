@@ -23,15 +23,15 @@
                         <input class="form__input" type="text" name="name" minlength="2" maxlength="20" pattern="^([А-ЯЁ]{1}[а-яё]+)(-?([А-ЯЁ]{1}[а-яё]+))?" placeholder="Имя" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="email" pattern="^\w+\-?\w+\@[a-z]{2,7}\.[a-z]{2,3}$" placeholder="E-Mail" required />
+                        <input class="form__input" type="email" name="email" pattern="^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,4}$" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="^(\+7|8) ?(\(9\d\d\)|9\d\d)?((\-| )?\d{3}\-{1}\d{2}\-{1}\d{2}| {1}\d{3} {1}\d{2} {1}\d{2}|\d{7})?$" minlength="18" maxlength="18"  required/>
+                        <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="(\+7|8) ?(\(9\d\d\)|9\d\d)((\-| )?\d{3}\-{1}\d{2}\-{1}\d{2}| {1}\d{3} {1}\d{2} {1}\d{2}|\d{7})" minlength="18" maxlength="18"  required/>
                         <span class="form__error">телефон в формате: +7 (900) 000-00-00</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="url" name="url" pattern="^https?\:\/\/(www\.)?(255.255.255.255|\w+)?(\:\d{2,5})?\.[a-z]+\/([a-zA-Z0-9\/]+\#?$)?" placeholder="Ваш сайт" required/>
+                        <input class="form__input" type="url" name="url" pattern="^https?\:\/\/(www\.)?(255.255.255.255(\:\d{2,5})?|\w+)\.[a-z]+\/([a-zA-Z0-9\/]+\#?)?" placeholder="Ваш сайт" required/>
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="submit">Отправить</button>
